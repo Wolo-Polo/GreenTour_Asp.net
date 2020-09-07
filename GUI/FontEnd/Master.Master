@@ -1,0 +1,1139 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Master.master.cs" Inherits="GUI.Master" %>
+
+<!DOCTYPE html>
+<html lang="vi-VN" class=" js ">
+
+<head>
+    <title>
+        <asp:ContentPlaceHolder ID="head" runat="server">
+        </asp:ContentPlaceHolder>
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="google-site-verification" content="0i6Df5YuLZFiSO-waJsLvfd8BYVxM6s8coHilXsQ5X4">
+    <link href="https://www.google-analytics.com/" rel="dns-prefetch">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="user-scalable=yes, width=device-width, initial-scale=1.0, minimum-scale=1">
+
+    <meta name="description"
+        content="Công ty du lịch Green Tour Đà Nẵng chuyên cung cấp tour du lịch trong nước và nước ngoài. Tổ chức teambuilding, event và các dịch vụ khác...">
+    <style type="text/css">
+        img.wp-smiley,
+        img.emoji {
+            display: inline !important;
+            border: none !important;
+            box-shadow: none !important;
+            height: 1em !important;
+            width: 1em !important;
+            margin: 0 .07em !important;
+            vertical-align: -0.1em !important;
+            background: none !important;
+            padding: 0 !important;
+        }
+    </style>
+    <link rel="stylesheet" id="wp-block-library-css" href="./Master_files/style.min.css" media="all">
+    <style id="wp-block-library-inline-css" type="text/css">
+        .has-text-align-justify {
+            text-align: justify;
+        }
+    </style>
+    <link rel="stylesheet" id="contact-form-7-css" href="./Master_files/styles.css" media="all">
+    <link rel="stylesheet" id="easingslider-css" href="./Master_files/public.min.css" media="all">
+    <link rel="stylesheet" id="kk-star-ratings-css" href="./Master_files/kk-star-ratings.css" media="all">
+    <style id="kk-star-ratings-inline-css" type="text/css">
+        .kk-star-ratings .kksr-stars .kksr-star {
+            margin-right: 0px;
+        }
+
+        [dir="rtl"] .kk-star-ratings .kksr-stars .kksr-star {
+            margin-left: 0px;
+            margin-right: 0;
+        }
+    </style>
+    <link rel="stylesheet" id="hamburger.css-css" href="./Master_files/wpr-hamburger.css" media="all">
+    <link rel="stylesheet" id="wprmenu.css-css" href="./Master_files/wprmenu.css" media="all">
+    <style id="wprmenu.css-inline-css" type="text/css">
+        @media only screen and (max-width: 768px) {
+            html body div.wprm-wrapper {
+                overflow: scroll;
+            }
+
+            #mg-wprm-wrap ul li {
+                border-top: solid 1px rgb(13, 13, 13);
+                border-bottom: solid 1px rgb(19, 18, 18);
+            }
+
+            #wprmenu_bar {
+                background-image: url();
+                background-size:;
+                background-repeat:;
+            }
+
+            #wprmenu_bar {
+                background-color: #0D0D0D;
+            }
+
+            html body div#mg-wprm-wrap .wpr_submit .icon.icon-search {
+                color:;
+            }
+
+            #wprmenu_bar .menu_title,
+            #wprmenu_bar .wprmenu_icon_menu {
+                color: #F2F2F2;
+            }
+
+            #wprmenu_bar .menu_title {
+                font-size: px;
+                font-weight:;
+            }
+
+            #mg-wprm-wrap li.menu-item a {
+                font-size: px;
+                text-transform:;
+                font-weight:;
+            }
+
+            #mg-wprm-wrap li.menu-item-has-children ul.sub-menu a {
+                font-size: px;
+                text-transform:;
+                font-weight:;
+            }
+
+            #mg-wprm-wrap li.current-menu-item > a {
+                background:;
+            }
+
+            #mg-wprm-wrap li.current-menu-item > a,
+            #mg-wprm-wrap li.current-menu-item span.wprmenu_icon {
+                color: !important;
+            }
+
+            #mg-wprm-wrap {
+                background-color: #2E2E2E;
+            }
+
+            .cbp-spmenu-push-toright,
+            .cbp-spmenu-push-toright .mm-slideout {
+                left: 80%;
+            }
+
+            .cbp-spmenu-push-toleft {
+                left: -80%;
+            }
+
+            #mg-wprm-wrap.cbp-spmenu-right,
+            #mg-wprm-wrap.cbp-spmenu-left,
+            #mg-wprm-wrap.cbp-spmenu-right.custom,
+            #mg-wprm-wrap.cbp-spmenu-left.custom,
+            .cbp-spmenu-vertical {
+                width: 80%;
+                max-width: px;
+            }
+
+            #mg-wprm-wrap ul#wprmenu_menu_ul li.menu-item a,
+            div#mg-wprm-wrap ul li span.wprmenu_icon {
+                color: #CFCFCF !important;
+            }
+
+                #mg-wprm-wrap ul#wprmenu_menu_ul li.menu-item a:hover {
+                    background:;
+                    color: #606060 !important;
+                }
+
+            div#mg-wprm-wrap ul > li:hover > span.wprmenu_icon {
+                color: #606060 !important;
+            }
+
+            .wprmenu_bar .hamburger-inner,
+            .wprmenu_bar .hamburger-inner::before,
+            .wprmenu_bar .hamburger-inner::after {
+                background: #FFFFFF;
+            }
+
+            .wprmenu_bar .hamburger:hover .hamburger-inner,
+            .wprmenu_bar .hamburger:hover .hamburger-inner::before,
+            .wprmenu_bar .hamburger:hover .hamburger-inner::after {
+                background:;
+            }
+
+            div.wprmenu_bar div.hamburger {
+                padding-right: 6px !important;
+            }
+
+            #wprmenu_menu.left {
+                width: 80%;
+                left: -80%;
+                right: auto;
+            }
+
+            #wprmenu_menu.right {
+                width: 80%;
+                right: -80%;
+                left: auto;
+            }
+
+            .wprmenu_bar .hamburger {
+                float: left;
+            }
+
+            .wprmenu_bar #custom_menu_icon.hamburger {
+                top: px;
+                left: px;
+                float: left !important;
+                background-color:;
+            }
+
+            .wpr_custom_menu #custom_menu_icon {
+                display: block;
+            }
+
+            html {
+                padding-top: 42px !important;
+            }
+
+            #wprmenu_bar,
+            #mg-wprm-wrap {
+                display: block;
+            }
+
+            div#wpadminbar {
+                position: fixed;
+            }
+        }
+    </style>
+    <link rel="stylesheet" id="wpr_icons-css" href="./Master_files/wpr-icons.css" media="all">
+    <link rel="stylesheet" id="normalize-css" href="./Master_files/normalize.css" media="all">
+    <link rel="stylesheet" id="html5blank-css" href="./Master_files/style.css" media="all">
+    <link rel="stylesheet" id="html5blank-custom-style-css" href="./Master_files/custom-style.css" media="all">
+    <link rel="stylesheet" id="tablepress-default-css" href="./Master_files/tablepress-combined.min.css" media="all">
+    <link rel="stylesheet" id="jetpack_css-css" href="./Master_files/jetpack.css" media="all">
+    <style>
+        .no-js img.lazyload {
+            display: none;
+        }
+
+        figure.wp-block-image img.lazyloading {
+            min-width: 150px;
+        }
+
+        .lazyload,
+        .lazyloading {
+            opacity: 0;
+        }
+
+        .lazyloaded {
+            opacity: 1;
+            transition: opacity 400ms;
+            transition-delay: 0ms;
+        }
+    </style>
+    <style type="text/css">
+        img#wpstats {
+            display: none
+        }
+    </style>
+    <link rel="icon" href="https://greentour.vn/wp-content/uploads/2019/12/cropped-logo-512-32x32.jpg" sizes="32x32">
+    <link rel="icon" href="https://greentour.vn/wp-content/uploads/2019/12/cropped-logo-512-192x192.jpg"
+        sizes="192x192">
+    <link rel="apple-touch-icon-precomposed"
+        href="https://greentour.vn/wp-content/uploads/2019/12/cropped-logo-512-180x180.jpg">
+    <meta name="msapplication-TileImage"
+        content="https://greentour.vn/wp-content/uploads/2019/12/cropped-logo-512-270x270.jpg">
+    <style type="text/css" id="wp-custom-css">
+        .top-post {
+            max-width: 40%
+        }
+
+        .img-schema {
+            max-width: 60%;
+            float: right;
+            min-height: 200px;
+            margin-left: 10px
+        }
+
+        .hs-123 {
+            display: inline-flex;
+        }
+
+        .img-schema > img {
+            min-height: 200px;
+            margin-top: 10px;
+        }
+
+        .item-list > h4 {
+            margin-bottom: 3px;
+            margin-top: 5px;
+        }
+
+        .item-list h4 a {
+            text-transform: capitalize;
+        }
+
+        .list-news {
+            background-color: white;
+        }
+    </style>
+
+    <link href="./Master_files/css" rel="stylesheet">
+    <style type="text/css">
+        .fb_hidden {
+            position: absolute;
+            top: -10000px;
+            z-index: 10001
+        }
+
+        .fb_reposition {
+            overflow: hidden;
+            position: relative
+        }
+
+        .fb_invisible {
+            display: none
+        }
+
+        .fb_reset {
+            background: none;
+            border: 0;
+            border-spacing: 0;
+            color: #000;
+            cursor: auto;
+            direction: ltr;
+            font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+            font-size: 11px;
+            font-style: normal;
+            font-variant: normal;
+            font-weight: normal;
+            letter-spacing: normal;
+            line-height: 1;
+            margin: 0;
+            overflow: visible;
+            padding: 0;
+            text-align: left;
+            text-decoration: none;
+            text-indent: 0;
+            text-shadow: none;
+            text-transform: none;
+            visibility: visible;
+            white-space: normal;
+            word-spacing: normal
+        }
+
+            .fb_reset > div {
+                overflow: hidden
+            }
+
+        @keyframes fb_transform {
+            from {
+                opacity: 0;
+                transform: scale(.95)
+            }
+
+            to {
+                opacity: 1;
+                transform: scale(1)
+            }
+        }
+
+        .fb_animate {
+            animation: fb_transform .3s forwards
+        }
+
+        .fb_dialog {
+            background: rgba(82, 82, 82, .7);
+            position: absolute;
+            top: -10000px;
+            z-index: 10001
+        }
+
+        .fb_dialog_advanced {
+            border-radius: 8px;
+            padding: 10px
+        }
+
+        .fb_dialog_content {
+            background: #fff;
+            color: #373737
+        }
+
+        .fb_dialog_close_icon {
+            background: url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;
+            cursor: pointer;
+            display: block;
+            height: 15px;
+            position: absolute;
+            right: 18px;
+            top: 17px;
+            width: 15px
+        }
+
+        .fb_dialog_mobile .fb_dialog_close_icon {
+            left: 5px;
+            right: auto;
+            top: 5px
+        }
+
+        .fb_dialog_padding {
+            background-color: transparent;
+            position: absolute;
+            width: 1px;
+            z-index: -1
+        }
+
+        .fb_dialog_close_icon:hover {
+            background: url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent
+        }
+
+        .fb_dialog_close_icon:active {
+            background: url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent
+        }
+
+        .fb_dialog_iframe {
+            line-height: 0
+        }
+
+        .fb_dialog_content .dialog_title {
+            background: #6d84b4;
+            border: 1px solid #365899;
+            color: #fff;
+            font-size: 14px;
+            font-weight: bold;
+            margin: 0
+        }
+
+            .fb_dialog_content .dialog_title > span {
+                background: url(https://static.xx.fbcdn.net/rsrc.php/v3/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;
+                float: left;
+                padding: 5px 0 7px 26px
+            }
+
+        body.fb_hidden {
+            height: 100%;
+            left: 0;
+            margin: 0;
+            overflow: visible;
+            position: absolute;
+            top: -10000px;
+            transform: none;
+            width: 100%
+        }
+
+        .fb_dialog.fb_dialog_mobile.loading {
+            background: url(https://static.xx.fbcdn.net/rsrc.php/v3/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;
+            min-height: 100%;
+            min-width: 100%;
+            overflow: hidden;
+            position: absolute;
+            top: 0;
+            z-index: 10001
+        }
+
+            .fb_dialog.fb_dialog_mobile.loading.centered {
+                background: none;
+                height: auto;
+                min-height: initial;
+                min-width: initial;
+                width: auto
+            }
+
+                .fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner {
+                    width: 100%
+                }
+
+                .fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content {
+                    background: none
+                }
+
+        .loading.centered #fb_dialog_loader_close {
+            clear: both;
+            color: #fff;
+            display: block;
+            font-size: 18px;
+            padding-top: 20px
+        }
+
+        #fb-root #fb_dialog_ipad_overlay {
+            background: rgba(0, 0, 0, .4);
+            bottom: 0;
+            left: 0;
+            min-height: 100%;
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 100%;
+            z-index: 10000
+        }
+
+            #fb-root #fb_dialog_ipad_overlay.hidden {
+                display: none
+            }
+
+        .fb_dialog.fb_dialog_mobile.loading iframe {
+            visibility: hidden
+        }
+
+        .fb_dialog_mobile .fb_dialog_iframe {
+            position: sticky;
+            top: 0
+        }
+
+        .fb_dialog_content .dialog_header {
+            background: linear-gradient(from(#738aba), to(#2c4987));
+            border-bottom: 1px solid;
+            border-color: #043b87;
+            box-shadow: white 0 1px 1px -1px inset;
+            color: #fff;
+            font: bold 14px Helvetica, sans-serif;
+            text-overflow: ellipsis;
+            text-shadow: rgba(0, 30, 84, .296875) 0 -1px 0;
+            vertical-align: middle;
+            white-space: nowrap
+        }
+
+            .fb_dialog_content .dialog_header table {
+                height: 43px;
+                width: 100%
+            }
+
+            .fb_dialog_content .dialog_header td.header_left {
+                font-size: 12px;
+                padding-left: 5px;
+                vertical-align: middle;
+                width: 60px
+            }
+
+            .fb_dialog_content .dialog_header td.header_right {
+                font-size: 12px;
+                padding-right: 5px;
+                vertical-align: middle;
+                width: 60px
+            }
+
+        .fb_dialog_content .touchable_button {
+            background: linear-gradient(from(#4267B2), to(#2a4887));
+            background-clip: padding-box;
+            border: 1px solid #29487d;
+            border-radius: 3px;
+            display: inline-block;
+            line-height: 18px;
+            margin-top: 3px;
+            max-width: 85px;
+            padding: 4px 12px;
+            position: relative
+        }
+
+        .fb_dialog_content .dialog_header .touchable_button input {
+            background: none;
+            border: none;
+            color: #fff;
+            font: bold 12px Helvetica, sans-serif;
+            margin: 2px -12px;
+            padding: 2px 6px 3px 6px;
+            text-shadow: rgba(0, 30, 84, .296875) 0 -1px 0
+        }
+
+        .fb_dialog_content .dialog_header .header_center {
+            color: #fff;
+            font-size: 16px;
+            font-weight: bold;
+            line-height: 18px;
+            text-align: center;
+            vertical-align: middle
+        }
+
+        .fb_dialog_content .dialog_content {
+            background: url(https://static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;
+            border: 1px solid #4a4a4a;
+            border-bottom: 0;
+            border-top: 0;
+            height: 150px
+        }
+
+        .fb_dialog_content .dialog_footer {
+            background: #f5f6f7;
+            border: 1px solid #4a4a4a;
+            border-top-color: #ccc;
+            height: 40px
+        }
+
+        #fb_dialog_loader_close {
+            float: left
+        }
+
+        .fb_dialog.fb_dialog_mobile .fb_dialog_close_button {
+            text-shadow: rgba(0, 30, 84, .296875) 0 -1px 0
+        }
+
+        .fb_dialog.fb_dialog_mobile .fb_dialog_close_icon {
+            visibility: hidden
+        }
+
+        #fb_dialog_loader_spinner {
+            animation: rotateSpinner 1.2s linear infinite;
+            background-color: transparent;
+            background-image: url(https://static.xx.fbcdn.net/rsrc.php/v3/yD/r/t-wz8gw1xG1.png);
+            background-position: 50% 50%;
+            background-repeat: no-repeat;
+            height: 24px;
+            width: 24px
+        }
+
+        @keyframes rotateSpinner {
+            0% {
+                transform: rotate(0deg)
+            }
+
+            100% {
+                transform: rotate(360deg)
+            }
+        }
+
+        .fb_iframe_widget {
+            display: inline-block;
+            position: relative
+        }
+
+            .fb_iframe_widget span {
+                display: inline-block;
+                position: relative;
+                text-align: justify
+            }
+
+            .fb_iframe_widget iframe {
+                position: absolute
+            }
+
+        .fb_iframe_widget_fluid_desktop,
+        .fb_iframe_widget_fluid_desktop span,
+        .fb_iframe_widget_fluid_desktop iframe {
+            max-width: 100%
+        }
+
+            .fb_iframe_widget_fluid_desktop iframe {
+                min-width: 220px;
+                position: relative
+            }
+
+        .fb_iframe_widget_lift {
+            z-index: 1
+        }
+
+        .fb_iframe_widget_fluid {
+            display: inline
+        }
+
+            .fb_iframe_widget_fluid span {
+                width: 100%
+            }
+    </style>
+</head>
+
+<body data-rsssl="1" class="home elementor-default">
+    <form id="form2" runat="server" method="post">
+        <!-- wrapper -->
+        <div class="wrapper">
+
+            <!-- header -->
+            <header class="header clear" role="banner">
+
+                <meta name="google-site-verification" content="0i6Df5YuLZFiSO-waJsLvfd8BYVxM6s8coHilXsQ5X4">
+                <!-- logo -->
+                <div class="logo">
+                    <a href="GUI_TrangChu.aspx">
+                        <!-- svg logo - toddmotto.com/mastering-svg-use-for-a-retina-web-fallbacks-with-png-script -->
+                        <img alt="Logo Greentour" data-src="https://greentour.vn/wp-content/uploads/2020/03/logo.jpg"
+                            class="logo-img lazyloaded" src="./Master_files/logo.jpg"><noscript><img
+                                src="https://greentour.vn/wp-content/uploads/2020/03/logo.jpg" alt="Logo Greentour"
+                                class="logo-img">
+                            </noscript>
+                    </a>
+                </div>
+                <!-- /logo -->
+                <div class="adv">
+                    <a href="GUI_TrangChu.aspx" title="Giới Thiệu"
+                        style="padding-left: 10px; padding-right: 10px;">Giới Thiệu</a>
+                    <a href="GUI_TrangChu.aspx" title="Tin Tức"
+                        style="padding-left: 10px; padding-right: 10px;">Tin Tức</a>
+                    <a href="GUI_TrangChu.aspx" title="Điểm Đến"
+                        style="padding-left: 10px; padding-right: 10px;">Điểm Đến Mới</a>
+                    <a href="GUI_TrangChu.aspx" title="Liên Hệ" style="padding-left: 10px; padding-right: 10px;">Liên
+					Hệ</a>
+                    <p><strong>Địa chỉ:</strong> 102 Trần Lựu - TP. Đà Nẵng</p>
+                    <p><strong>Email:</strong> info@greentour.vn</p>
+                    <p><strong>Hotline:</strong> 0905187802</p>
+                </div>
+            </header>
+            <!-- /header -->
+
+            <!-- nav -->
+            <nav class="nav" role="navigation">
+                <div class="page-width">
+                    <ul>
+                        <li id="menu-item-59"
+                            class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-59">
+                            <a style="padding-left: 8px; padding-right: 8px;" href="GUI_TrangChu.aspx" aria-current="page">Home</a></li>
+                        <li id="menu-item-368"
+                            class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-368">
+                            <a style="padding-left: 8px; padding-right: 8px;" href="GUI_ChiTietDanhMuc_Tour.aspx?madanhmuc=TOURDN">Tour Đà Nẵng</a>
+                            <ul class="sub-menu">
+                                <asp:DataList ID="DataList1" runat="server">
+                                    <ItemTemplate>
+                                        <li id="menu-item-369"
+                                            class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-369"><a
+                                                href='GUI_ChiTietDanhMucPhu_Tour.aspx?madanhmucphu=<%#Eval("madanhmucphu") %>'><asp:Label ID="Label1" runat="server" Text='<%#Eval("tendanhmucphu") %>'></asp:Label></a></li>
+
+                                    </ItemTemplate>
+                                </asp:DataList>
+
+
+                            </ul>
+                        </li>
+                        <li id="menu-item-2681"
+                            class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-2681">
+                            <a style="padding-left: 8px; padding-right: 8px;" style="padding-left: 8px; padding-right: 8px;" href='GUI_ChiTietDanhMuc_Tour.aspx?madanhmuc=TOURMB'>Tour miền bắc</a>
+                            <ul class="sub-menu">
+                                <asp:DataList ID="DataList2" runat="server">
+                                    <ItemTemplate>
+                                        <li id="menu-item-369"
+                                            class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-369"><a
+                                                href='GUI_ChiTietDanhMucPhu_Tour.aspx?madanhmucphu=<%#Eval("madanhmucphu") %>'><asp:Label ID="Label1" runat="server" Text='<%#Eval("tendanhmucphu") %>'></asp:Label></a></li>
+
+                                    </ItemTemplate>
+                                </asp:DataList>
+                            </ul>
+                        </li>
+                        <li id="menu-item-2668"
+                            class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-2668">
+                            <a style="padding-left: 8px; padding-right: 8px;" href="GUI_ChiTietDanhMuc_Tour.aspx?madanhmuc=TOURMT">Tour miền trung</a>
+                            <ul class="sub-menu">
+                                <asp:DataList ID="DataList3" runat="server">
+                                    <ItemTemplate>
+                                        <li id="menu-item-369"
+                                            class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-369"><a
+                                                href='GUI_ChiTietDanhMucPhu_Tour.aspx?madanhmucphu=<%#Eval("madanhmucphu") %>'><asp:Label ID="Label1" runat="server" Text='<%#Eval("tendanhmucphu") %>'></asp:Label></a></li>
+
+                                    </ItemTemplate>
+                                </asp:DataList>
+                            </ul>
+                        </li>
+                        <li id="menu-item-1099"
+                            class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-1099">
+                            <a style="padding-left: 8px; padding-right: 8px;" href="GUI_ChiTietDanhMuc_Tour.aspx?madanhmuc=TOURMN">Tour miền nam</a>
+                            <ul class="sub-menu">
+                                <asp:DataList ID="DataList4" runat="server">
+                                    <ItemTemplate>
+                                        <li id="menu-item-369"
+                                            class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-369"><a
+                                                href='GUI_ChiTietDanhMucPhu_Tour.aspx?madanhmucphu=<%#Eval("madanhmucphu") %>'><asp:Label ID="Label1" runat="server" Text='<%#Eval("tendanhmucphu") %>'></asp:Label></a></li>
+
+                                    </ItemTemplate>
+                                </asp:DataList>
+                            </ul>
+                        </li>
+                        <li id="menu-item-2712"
+                            class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-1099">
+                            <a style="padding-left: 8px; padding-right: 8px;" href="GUI_ChiTietDanhMuc_Tour.aspx?madanhmuc=TOURNN">Tour nước ngoài</a>
+                            <ul class="sub-menu">
+                                <asp:DataList ID="DataList5" runat="server">
+                                    <ItemTemplate>
+                                        <li id="menu-item-369"
+                                            class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-369"><a
+                                                href='GUI_ChiTietDanhMucPhu_Tour.aspx?madanhmucphu=<%#Eval("madanhmucphu") %>'><asp:Label ID="Label1" runat="server" Text='<%#Eval("tendanhmucphu") %>'></asp:Label></a></li>
+
+                                    </ItemTemplate>
+                                </asp:DataList>
+                            </ul>
+                        </li>
+                        <li id="menu-item-377"
+                            class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-2712">
+                            <a style="padding-left: 8px; padding-right: 8px;" href="GUI_ChiTietDanhMuc_ThueXe.aspx">Thuê xe</a>
+                            <ul class="sub-menu">
+                                <asp:DataList ID="DataList6" runat="server">
+                                    <ItemTemplate>
+                                        <li id="menu-item-369"
+                                            class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-369"><a
+                                                href='GUI_ChiTietDanhMucPhu_ThueXe.aspx?madanhmucphu=<%#Eval("madanhmucphu") %>'><asp:Label ID="Label1" runat="server" Text='<%#Eval("tendanhmucphu") %>'></asp:Label></a></li>
+
+                                    </ItemTemplate>
+                                </asp:DataList>
+                            </ul>
+                        </li>
+                        <li id="menu-item-2687"
+                            class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-377">
+                            <a style="padding-left: 8px; padding-right: 8px;" href="GUI_ChiTietDanhMuc_SuKien.aspx">Sự kiện</a>
+                            <ul class="sub-menu">
+                                <asp:DataList ID="DataList7" runat="server">
+                                    <ItemTemplate>
+                                        <li id="menu-item-369"
+                                            class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-369"><a
+                                                href='GUI_ChiTietDanhMucPhu_SuKien.aspx?madanhmucphu=<%#Eval("madanhmucphu") %>'><asp:Label ID="Label1" runat="server" Text='<%#Eval("tendanhmucphu") %>'></asp:Label></a></li>
+
+                                    </ItemTemplate>
+                                </asp:DataList>
+                            </ul>
+                        </li>
+                       
+                        <li id="menu-item-2823"
+                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-466">
+                            <a style="padding-left: 8px; padding-right: 8px;" href="GUI_ChiTietDanhMuc_LichTrinh.aspx">Lịch trình</a>
+                            <ul class="sub-menu">
+                                <asp:DataList ID="DataList8" runat="server">
+                                    <ItemTemplate>
+                                        <li id="menu-item-369"
+                                            class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-369"><a
+                                                href='GUI_ChiTietDanhMucPhu_LichTrinh.aspx?tendanhmuc=<%#Eval("tendanhmucphu") %>'><asp:Label ID="Label1" runat="server" Text='<%#Eval("tendanhmucphu") %>'></asp:Label></a></li>
+
+                                    </ItemTemplate>
+                                </asp:DataList>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- /nav -->
+            <!-- content -->
+            <div id="content" class="content">
+                <div class="teambuilding"></div>
+                <style type="text/css">
+                    .easingslider-53 {
+                        max-width: 1040px;
+                    }
+
+                        .easingslider-53 .easingslider-image {
+                            max-height: 350px;
+                            max-width: 1040px;
+                        }
+
+                        .easingslider-53 .easingslider-fade-in,
+                        .easingslider-fade-out {
+                            -webkit-animation-duration: 3000ms;
+                            -moz-animation-duration: 3000ms;
+                            animation-duration: 3000ms;
+                        }
+                </style>
+
+                <main role="main">
+                    <h3 style="text-align:right">Tìm kiếm: <asp:TextBox ID="TextBoxTimKiem" runat="server"></asp:TextBox> <asp:Button ID="ButtonTimKiem" runat="server" Text="Tìm kiếm" OnClick="ButtonTimKiem_Click" /></h3>
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder" runat="server">
+                    </asp:ContentPlaceHolder>
+                </main>
+
+                <!-- sidebar -->
+                <aside class="sidebar" role="complementary">
+
+                    <div class="sidebar-widget">
+                        <div id="text-5" class="widget_text">
+                            <h3>Số lượt truy cập: <asp:Label ID="soLuotTruyCap" runat="server" Text="Label"></asp:Label></h3>
+                            <h3>Số người online: <asp:Label ID="soNguoiOnline" runat="server" Text="Label"></asp:Label></h3>
+                            <h3>Hổ trợ online</h3>
+                            <div class="textwidget">
+                                <div class="hotro">
+                                    <ul>
+                                        <span class="titles">TỔNG ĐÀI TƯ VẤN : 0236.699906 <span
+                                            style="margin-right: 5px; margin-center: 12px"></span></span>
+
+                                        <ul>
+                                            <span class="titles">TƯ VẤN TOUR <span
+                                                style="margin-right: 5px; margin-left: 8px">(0236) 6.3699906</span></span>
+                                            <li>
+                                                <span class="left">
+                                                    <a href="skype:greentoursdng?call">
+                                                        <img width="16" height="16" style="border: none;" alt="My status"
+                                                            data-src="https://greentour.vn/wp-content/uploads/2019/09/skype.jpg"
+                                                            class=" lazyloaded"
+                                                            src="./Master_files/skype.jpg"><noscript><img width="16"
+                                                                height="16" style="border: none;" alt="My status"
+                                                                data-src="https://greentour.vn/wp-content/uploads/2019/09/skype.jpg"
+                                                                class="lazyload"
+                                                                src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img
+                                                                    width="16" height="16" style="border: none;"
+                                                                    alt="My status"
+                                                                    data-src="https://greentour.vn/wp-content/uploads/2019/09/skype.jpg"
+                                                                    class="lazyload"
+                                                                    src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img
+                                                                        width="16" height="16"
+                                                                        src="https://greentour.vn/wp-content/uploads/2019/09/skype.jpg"
+                                                                        style="border: none;" alt="My status">
+                                                                    </noscript>
+                                                    </a>
+                                                    <a rel="nofollow" href="ymsgr:sendIM?phungafc"></a>Mr. Phụng</span>
+                                                <span class="right">0905.187802</span>
+                                            </li>
+                                        </ul>
+                                        <hr>
+                                        <ul>
+                                            <span class="titles">VÉ MÁY BAY <span
+                                                style="margin-right: 5px; margin-left: 8px">(0236) 3699906</span></span>
+                                            <li>
+                                                <span class="left">
+                                                    <a href="skype:tvemaybaygreentour?call">
+                                                        <img width="16" height="16" style="border: none;" alt="My status"
+                                                            data-src="https://greentour.vn/wp-content/uploads/2019/09/skype.jpg"
+                                                            class=" lazyloaded"
+                                                            src="./Master_files/skype.jpg"><noscript><img width="16"
+                                                                height="16" style="border: none;" alt="My status"
+                                                                data-src="https://greentour.vn/wp-content/uploads/2019/09/skype.jpg"
+                                                                class="lazyload"
+                                                                src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img
+                                                                    width="16" height="16" style="border: none;"
+                                                                    alt="My status"
+                                                                    data-src="https://greentour.vn/wp-content/uploads/2019/09/skype.jpg"
+                                                                    class="lazyload"
+                                                                    src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img
+                                                                        width="16" height="16"
+                                                                        src="https://greentour.vn/wp-content/uploads/2019/09/skype.jpg"
+                                                                        style="border: none;" alt="My status">
+                                                                    </noscript>
+                                                    </a>
+                                                    <a rel="nofollow" href="ymsgr:sendIM?phungafc"></a>Ms. Nani Lee</span>
+                                                <span class="right">0919.993055</span>
+                                            </li>
+                                        </ul>
+                                        <hr>
+                                        <ul>
+                                            <span class="titles">TEAM BUILDING<span
+                                                style="margin-right: 5px; margin-left: 8px">(0236) 3.699.906</span></span>
+                                            <li>
+                                                <span class="left">
+                                                    <a href="skype:tiengreentours?call">
+                                                        <img width="16" height="16" style="border: none;" alt="My status"
+                                                            data-src="https://greentour.vn/wp-content/uploads/2019/09/skype.jpg"
+                                                            class=" lazyloaded"
+                                                            src="./Master_files/skype.jpg"><noscript><img width="16"
+                                                                height="16" style="border: none;" alt="My status"
+                                                                data-src="https://greentour.vn/wp-content/uploads/2019/09/skype.jpg"
+                                                                class="lazyload"
+                                                                src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img
+                                                                    width="16" height="16" style="border: none;"
+                                                                    alt="My status"
+                                                                    data-src="https://greentour.vn/wp-content/uploads/2019/09/skype.jpg"
+                                                                    class="lazyload"
+                                                                    src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img
+                                                                        width="16" height="16"
+                                                                        src="https://greentour.vn/wp-content/uploads/2019/09/skype.jpg"
+                                                                        style="border: none;" alt="My status">
+                                                                    </noscript>
+                                                    </a>
+                                                    <a rel="nofollow" href="ymsgr:sendIM?tien_greentours"></a>MR. Dang</span>
+                                                <span class="right">0914.800544</span>
+                                            </li>
+                                        </ul>
+
+                                    </ul>
+                                </div>
+                                <hr>
+                                <img width="100%"
+                                    data-src="https://greentour.vn/wp-content/uploads/2019/11/rsz_65x104-after.jpg"
+                                    class=" lazyloaded" src="./Master_files/rsz_65x104-after.jpg"><noscript><img
+                                        src="https://greentour.vn/wp-content/uploads/2019/11/rsz_65x104-after.jpg"
+                                        width="100%">
+                                    </noscript>
+                            </div>
+                        </div>
+                        
+
+                        
+                        
+                    </div>
+
+                    <div class="sidebar-widget">
+                    </div>
+
+                </aside>
+                <!-- /sidebar -->
+
+            </div>
+            <!-- /content -->
+
+            <!-- footer -->
+            <footer class="footer" role="contentinfo">
+
+                <div class="footer4">
+                    <aside id="text-6" class="widget widget_text">
+                        <div class="textwidget">
+                            <div class="vanphong">
+                                <h3 class="widget-title">DU LỊCH GREEN TOUR </h3>
+                                <p class="mail"><b>E-Mail:</b> info@greentour.vn</p>
+                                <p class="truso"><b>Trụ Sở:</b> 102 Trần Lựu - Tp.Đà Nẵng</p>
+                                <p class="dienthoai"><b>Điện thoại:</b> 0236 3699906</p>
+                                <p class="fax"><b>Fax:</b> (0236) 3.668.788</p>
+                                <p class="mst"><b>MST:</b> 0400601573</p>
+                            </div>
+                            <div class="daidien1">
+                                <h3 class="widget-title">VPĐL TP HỒ CHÍ MINH</h3>
+                                <p class="truso"><b>Địa chỉ:</b> 198 Phan Văn Trị, P.10, Quận Gò Vấp, TP.HCM</p>
+                                <p class="dienthoai"><b>Điện thoại:</b> 0913665411</p>
+
+                                <p class="truso"><b>Địa chỉ:</b> 20 Trần Phú - TP. Huế</p>
+                                <p class="dienthoai"><b>Điện thoại:</b> -0905.187802 </p>
+                                <p class="fax"><b>Fax:</b> (0236) 3.668.788</p>
+                            </div>
+                            <div class="uyquyen">
+                                <div class="hoian">
+                                    <h3 class="widget-title">ĐẠI LÝ TẠI HỘI AN</h3>
+                                    <p class="truso"><b>Địa chỉ:</b> 627 Hai Bà trưng - TP Hội An</p>
+                                    <p class="dienthoai"><b>Điện thoại:</b>0914800544</p>
+                                </div>
+                                <div class="hoian">
+                                    <h3 class="widget-title">CHI NHÁNH QUẢNG NAM</h3>
+                                    <p class="truso"><b>Địa chỉ:</b>115 Trần Quý Cáp-T.Kỳ-Quảng Nam</p>
+                                    <p class="dienthoai"><b>Điện thoại:</b>0914.800544</p>
+                                </div>
+                                <div class="hoian">
+                                    <h3 class="widget-title">CHI NHÁNH TẠI QUẢNG BÌNH</h3>
+                                    <p class="truso"><b>Địa chỉ:</b> 78 Trần Nhân Tông - Đồng Hới - QB</p>
+                                    <p class="dienthoai"><b>Điện thoại:</b>0905187802</p>
+                                </div>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+                <div class="footer5">
+                    <aside id="text-7" class="widget widget_text">
+                        <div class="textwidget">
+                            <a rel="dofollow noopener noreferrer"
+                                href="http://www.tochucsukien.danang.vn/" title="Tổ Chức Sự Kiện Đà Nẵng" target="_blank">Tổ
+							Chức Sự Kiện Đà Nẵng</a>
+                            <a rel="dofollow noopener noreferrer"
+                                href="http://greentour.com.vn/du-lich-nuoc-ngoai/du-lich-han-quoc-gia-re/"
+                                title="Tour Da Nang Han Quoc" target="_blank">Tour Đà Nẵng - Hàn Quốc</a>
+                            <a href="http://greentour.com.vn/tour-da-nang-hue-1-ngay.html/" title="Tour Đà Nẵng Huế 1 ngày"
+                                target="_blank" rel="noopener noreferrer">Tour Đà Nẵng Huế 1 ngày </a>,
+						<a href="http://greentour.com.vn/du-lich-da-nang.html" title="tour Da Nang">Du Lịch Đà Nẵng</a>,
+						<a href="https://greentour.vn/" title="Du Lịch Đà Nẵng" target="_blank"
+                            rel="noopener noreferrer">Du Lịch Đà Nẵng </a>, <a
+                                href="http://dulichbana.vn/tour-ba-na-trong-ngay-gia-uu-dai.html"
+                                rel="dofollow noopener noreferrer" target="_blank" title="Du lich ba na">Tour du lịch Bà
+							Nà</a>
+                        </div>
+                    </aside>
+                    <!-- copyright -->
+                    <div class="copyright">
+                        © 2020 Copyright Công ty du lịch tại Đà Nẵng – Green Tour. Powered by <a
+                            href="https://greentour.vn/" title="Greentour">Green tour</a>. Được thiết kế bởi: <a
+                                href="https://1234.com.vn/dich-vu-thiet-ke-website-chuyen-nghiep"
+                                title="Thiết kế web Đà Nẵng">Thiết kế web Đà Nẵng</a>.
+                    </div>
+                    <!-- /copyright -->
+                </div>
+
+            </footer>
+            <!-- /footer -->
+
+        </div>
+        <!-- /wrapper -->
+
+
+
+
+        <!-- Start Quick Call Buttons By LongVietWeb.com -->
+
+
+        <div class="wprm-wrapper">
+
+            <!-- Overlay Starts here -->
+            <!-- Overlay Ends here -->
+
+            <div id="wprmenu_bar" class="wprmenu_bar  left">
+                <div class="hamburger hamburger--slider">
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                </div>
+                <div class="menu_title">
+                    <a href="https://greentour.vn/">MENU    </a>
+                </div>
+            </div>
+            <div class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left  " id="mg-wprm-wrap">
+
+
+                <ul id="wprmenu_menu_ul">
+
+                    <li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-59"><a href="https://greentour.vn/" aria-current="page">Home</a></li>
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-368 wprmenu_parent_item_li"><span class="wprmenu_icon wprmenu_icon_par icon_default"></span><a href="https://greentour.vn/tour-mien-trung" class="wprmenu_parent_item">Tour miền trung</a>
+                        <ul class="sub-menu" style="display: none;">
+                            <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-369"><a href="https://greentour.vn/tour-mien-trung/tour-du-lich-ba-na">Tour du lịch Bà Nà</a></li>
+                            <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-370"><a href="https://greentour.vn/tour-mien-trung/tour-du-lich-cu-lao-cham">Tour du lịch Cù Lao Chàm</a></li>
+                            <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-371"><a href="https://greentour.vn/tour-mien-trung/tour-du-lich-da-nang">Tour du lịch Đà Nẵng</a></li>
+                            <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-372"><a href="https://greentour.vn/tour-mien-trung/tour-du-lich-hoi-an">Tour du lịch Hội An</a></li>
+                            <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-373"><a href="https://greentour.vn/tour-mien-trung/tour-du-lich-hue">Tour du lịch Huế</a></li>
+                            <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-374"><a href="https://greentour.vn/tour-mien-trung/tour-du-lich-ly-son">Tour du lịch lý sơn</a></li>
+                            <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-375"><a href="https://greentour.vn/tour-mien-trung/tour-du-lich-quang-binh">Tour du lịch Quảng Bình</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-2681 wprmenu_parent_item_li"><span class="wprmenu_icon wprmenu_icon_par icon_default"></span><a href="https://greentour.vn/tour-da-nang" class="wprmenu_parent_item">Tour Đà Nẵng</a>
+                        <ul class="sub-menu" style="display: none;">
+                            <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2682"><a href="https://greentour.vn/tour-da-nang/tour-da-nang-khuyen-mai">Tour Đà Nẵng Khuyến Mãi</a></li>
+                            <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2683"><a href="https://greentour.vn/tour-da-nang/tour-ghep-hang-ngay">Tour Ghép Hằng Ngày</a></li>
+                            <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2685"><a href="https://greentour.vn/tour-da-nang/tour-tet-da-nang">Tour Tết Đà Nẵng</a></li>
+                            <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2686"><a href="https://greentour.vn/tour-mien-trung/tour-hanh-trinh-di-san">Tour Hành Trình Di Sản</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-2668 wprmenu_parent_item_li"><span class="wprmenu_icon wprmenu_icon_par icon_default"></span><a href="https://greentour.vn/tour-bac-nam" class="wprmenu_parent_item">Tour Bắc Nam</a>
+                        <ul class="sub-menu" style="display: none;">
+                            <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2671"><a href="https://greentour.vn/tour-mien-bac/tour-ha-noi">Tour Hà Nội</a></li>
+                            <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2670"><a href="https://greentour.vn/tour-mien-bac/tour-ha-long">Tour Hạ Long</a></li>
+                            <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2672"><a href="https://greentour.vn/tour-mien-bac/tour-ninh-binh">Tour Ninh Bình</a></li>
+                            <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2669"><a href="https://greentour.vn/tour-mien-bac/tour-ha-giang">Tour Hà Giang</a></li>
+                            <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2673"><a href="https://greentour.vn/tour-mien-bac/tour-sapa">Tour Sapa</a></li>
+                            <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2674"><a href="https://greentour.vn/tour-mien-nam/tour-da-lat">Tour Du Lịch Đà Lạt</a></li>
+                            <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2675"><a href="https://greentour.vn/tour-mien-nam/tour-nha-trang">Tour Nha Trang</a></li>
+                            <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2676"><a href="https://greentour.vn/tour-mien-nam/tour-phu-quoc">Tour Phú Quốc</a></li>
+                            <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2677"><a href="https://greentour.vn/tour-mien-tay">Tour Miền Tây</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-1099 wprmenu_parent_item_li"><span class="wprmenu_icon wprmenu_icon_par icon_default"></span><a href="https://greentour.vn/tour-nuoc-ngoai" class="wprmenu_parent_item">Tour nước ngoài</a>
+                        <ul class="sub-menu" style="display: none;">
+                            <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1104"><a href="https://greentour.vn/tour-nuoc-ngoai/tour-thai-lan">Tour Thái Lan</a></li>
+                            <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1100"><a href="https://greentour.vn/tour-nuoc-ngoai/tour-han-quoc">Tour Hàn Quốc</a></li>
+                            <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1101"><a href="https://greentour.vn/tour-nuoc-ngoai/tour-lao">Tour Lào</a></li>
+                            <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1102"><a href="https://greentour.vn/tour-nuoc-ngoai/tour-nhat-ban">Tour Nhật Bản</a></li>
+                            <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1103"><a href="https://greentour.vn/tour-nuoc-ngoai/tour-singapore">Tour Singapore</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-2712 wprmenu_parent_item_li"><span class="wprmenu_icon wprmenu_icon_par icon_default"></span><a href="https://greentour.vn/teambuilding" class="wprmenu_parent_item">Teambuilding</a>
+                        <ul class="sub-menu" style="display: none;">
+                            <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2713"><a href="https://greentour.vn/teambuilding/cac-loai-hinh-team-building">Các Loại Hình Teambuilding</a></li>
+                            <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2714"><a href="https://greentour.vn/teambuilding/chuong-trinh-da-to-chuc">Chương Trình Đã Tổ Chức</a></li>
+                            <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2715"><a href="https://greentour.vn/teambuilding/dia-diem-tochuc-team-building">Địa Điểm Tổ Chức Teambuilding</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-377 wprmenu_parent_item_li"><span class="wprmenu_icon wprmenu_icon_par icon_default"></span><a href="https://greentour.vn/thue-xe-du-lich" class="wprmenu_parent_item">Xe du lịch</a>
+                        <ul class="sub-menu" style="display: none;">
+                            <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2665"><a href="https://greentour.vn/thue-xe-du-lich">Thuê xe du lịch</a></li>
+                            <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2666"><a href="https://greentour.vn/thue-xe-du-lich/thue-xe-vip">Thuê Xe VIP</a></li>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2830"><a href="https://greentour.vn/thue-xe-cuoi-tai-da-nang.html">Thuê xe cưới tại Đà Nẵng</a></li>
+                            <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2679"><a href="https://greentour.vn/thue-xe-du-lich/xe-du-an">Xe Dự Án</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-2687 wprmenu_parent_item_li"><span class="wprmenu_icon wprmenu_icon_par icon_default"></span><a href="https://greentour.vn/lam-visa" class="wprmenu_parent_item">Visa</a>
+                        <ul class="sub-menu" style="display: none;">
+                            <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2690"><a href="https://greentour.vn/lam-visa/visa-nhap-canh">Visa Nhập Cảnh</a></li>
+                            <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2691"><a href="https://greentour.vn/lam-visa/visa-xuat-canh">Visa Xuất Cảnh</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-2823 wprmenu_parent_item_li"><span class="wprmenu_icon wprmenu_icon_par icon_default"></span><a href="https://greentour.vn/event" class="wprmenu_parent_item">Event</a>
+                        <ul class="sub-menu" style="display: none;">
+                            <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2827"><a href="https://greentour.vn/event/to-chuc-su-kien">Tổ Chức Sự Kiện</a></li>
+                            <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2826"><a href="https://greentour.vn/event/to-chuc-hoi-nghi-hoi-thao">Tổ Chức Hội Nghị Hội Thảo</a></li>
+                            <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2824"><a href="https://greentour.vn/event/nhan-su-su-kien">Nhân Sự Sự Kiện</a></li>
+                            <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2825"><a href="https://greentour.vn/event/thiet-bi-su-kien">Thiết bị sự kiện</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-466 wprmenu_parent_item_li"><span class="wprmenu_icon wprmenu_icon_par icon_default"></span><a href="https://greentour.vn/#" class="wprmenu_parent_item">Lịch Khởi Hành</a>
+                        <ul class="sub-menu" style="display: none;">
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1991"><a href="https://greentour.vn/lich-khoi-hanh-nuoc-ngoai-2">Lịch Khởi Hành Nước Ngoài</a></li>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1995"><a href="https://greentour.vn/lich-khoi-hanh-trong-nuoc">Lịch Khởi Hành Trong Nước</a></li>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1998"><a href="https://greentour.vn/lich-tour-tet">Lịch Tour Tết</a></li>
+                        </ul>
+                    </li>
+
+
+                </ul>
+
+            </div>
+        </div>
+
+
+    </form>
+</body>
+
+</html>

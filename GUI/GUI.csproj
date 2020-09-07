@@ -1,0 +1,422 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EF39D002-3813-4384-9E0F-BEB190612707}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GUI</RootNamespace>
+    <AssemblyName>GUI</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <Use64BitIISExpress />
+    <UseGlobalApplicationHostFile />
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="BackEnd\GUI_booked.aspx" />
+    <Content Include="BackEnd\GUI_DangNhap.aspx" />
+    <Content Include="BackEnd\GUI_DanhMucChinh.aspx" />
+    <Content Include="BackEnd\GUI_DanhMucPhu.aspx" />
+    <Content Include="BackEnd\GUI_LichTrinh.aspx" />
+    <Content Include="BackEnd\GUI_ManHinhChucNang.aspx" />
+    <Content Include="BackEnd\GUI_SuKien.aspx" />
+    <Content Include="BackEnd\GUI_TaiKhoan.aspx" />
+    <Content Include="BackEnd\GUI_Tour.aspx" />
+    <Content Include="BackEnd\GUI_XeThue.aspx" />
+    <Content Include="BackEnd\csse2bf.css" />
+    <Content Include="FontEnd\img\dattour.png" />
+    <Content Include="FontEnd\GUI_ChiTietDanhMucPhu_LichTrinh.aspx" />
+    <Content Include="FontEnd\GUI_ChiTietDanhMucPhu_SuKien.aspx" />
+    <Content Include="FontEnd\GUI_ChiTietDanhMucPhu_ThueXe.aspx" />
+    <Content Include="FontEnd\GUI_ChiTietDanhMucPhu_Tour.aspx" />
+    <Content Include="FontEnd\GUI_ChiTietDanhMuc_LichTrinh.aspx" />
+    <Content Include="FontEnd\GUI_ChiTietDanhMuc_SuKien.aspx" />
+    <Content Include="FontEnd\GUI_ChiTietDanhMuc_ThueXe.aspx" />
+    <Content Include="FontEnd\GUI_ChiTietDanhMuc_Tour.aspx" />
+    <Content Include="FontEnd\GUI_ChiTietSuKien.aspx" />
+    <Content Include="FontEnd\GUI_ChiTietTour.aspx" />
+    <Content Include="FontEnd\GUI_ChiTietXeThue.aspx" />
+    <Content Include="FontEnd\GUI_TimKiem.aspx" />
+    <Content Include="FontEnd\GUI_TrangChu.aspx" />
+    <Content Include="FontEnd\GUI_XacNhanTour.aspx" />
+    <Content Include="FontEnd\Master_files\1-1040x350.jpg" />
+    <Content Include="FontEnd\Master_files\25358194_1997405083881976_7218474851895425892_o.jpg" />
+    <Content Include="FontEnd\Master_files\29178072_543859532680013_5145037896218050560_n.jpg" />
+    <Content Include="FontEnd\Master_files\44c7a35ac49142993d8186f2c288b22b.jpg" />
+    <Content Include="FontEnd\Master_files\69599246_2407597256196088_3339237064326512640_o.jpg" />
+    <Content Include="FontEnd\Master_files\code.php" />
+    <Content Include="FontEnd\Master_files\custom-style.css" />
+    <Content Include="FontEnd\Master_files\dmca_protected_sml_120b.png" />
+    <Content Include="FontEnd\Master_files\eb3SVrhbu6J.css" />
+    <Content Include="FontEnd\Master_files\jetpack.css" />
+    <Content Include="FontEnd\Master_files\k9C-DITGnkZ.css" />
+    <Content Include="FontEnd\Master_files\kk-star-ratings.css" />
+    <Content Include="FontEnd\Master_files\logo.jpg" />
+    <Content Include="FontEnd\Master_files\noavatar.png" />
+    <Content Include="FontEnd\Master_files\normalize.css" />
+    <Content Include="FontEnd\Master_files\online.gif" />
+    <Content Include="FontEnd\Master_files\page.html" />
+    <Content Include="FontEnd\Master_files\public.min.css" />
+    <Content Include="FontEnd\Master_files\quick-call-button.css" />
+    <Content Include="FontEnd\Master_files\rsz_65x104-after.jpg" />
+    <Content Include="FontEnd\Master_files\saved_resource%281%29.html" />
+    <Content Include="FontEnd\Master_files\saved_resource.html" />
+    <Content Include="FontEnd\Master_files\skype.jpg" />
+    <Content Include="FontEnd\Master_files\slide-tung-bung-khuyen-mai-mua-su-kien-cuoi-nam-1040x3501_optimized-1040x350_optimized-1040x350.jpg" />
+    <Content Include="FontEnd\Master_files\style.css" />
+    <Content Include="FontEnd\Master_files\style.min.css" />
+    <Content Include="FontEnd\Master_files\styles.css" />
+    <Content Include="FontEnd\Master_files\tablepress-combined.min.css" />
+    <Content Include="FontEnd\Master_files\teambuilding_optimized.jpg" />
+    <Content Include="FontEnd\Master_files\timthumb%281%29.php" />
+    <Content Include="FontEnd\Master_files\timthumb%2810%29.php" />
+    <Content Include="FontEnd\Master_files\timthumb%2811%29.php" />
+    <Content Include="FontEnd\Master_files\timthumb%2812%29.php" />
+    <Content Include="FontEnd\Master_files\timthumb%2813%29.php" />
+    <Content Include="FontEnd\Master_files\timthumb%2814%29.php" />
+    <Content Include="FontEnd\Master_files\timthumb%282%29.php" />
+    <Content Include="FontEnd\Master_files\timthumb%283%29.php" />
+    <Content Include="FontEnd\Master_files\timthumb%284%29.php" />
+    <Content Include="FontEnd\Master_files\timthumb%285%29.php" />
+    <Content Include="FontEnd\Master_files\timthumb%286%29.php" />
+    <Content Include="FontEnd\Master_files\timthumb%287%29.php" />
+    <Content Include="FontEnd\Master_files\timthumb%288%29.php" />
+    <Content Include="FontEnd\Master_files\timthumb%289%29.php" />
+    <Content Include="FontEnd\Master_files\timthumb.php" />
+    <Content Include="FontEnd\Master_files\tour-cu-lao-cham-1040x350.jpg" />
+    <Content Include="FontEnd\Master_files\tour-ly-son-1040x350.jpg" />
+    <Content Include="FontEnd\Master_files\WkQasJ0JGCX.css" />
+    <Content Include="FontEnd\Master_files\wpr-hamburger.css" />
+    <Content Include="FontEnd\Master_files\wpr-icons.css" />
+    <Content Include="FontEnd\Master_files\wprmenu.css" />
+    <Content Include="Global.asax" />
+    <Content Include="SL.txt" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BackEnd\GUI_booked.aspx.cs">
+      <DependentUpon>GUI_booked.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackEnd\GUI_booked.aspx.designer.cs">
+      <DependentUpon>GUI_booked.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BackEnd\GUI_DangNhap.aspx.cs">
+      <DependentUpon>GUI_DangNhap.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackEnd\GUI_DangNhap.aspx.designer.cs">
+      <DependentUpon>GUI_DangNhap.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BackEnd\GUI_DanhMucChinh.aspx.cs">
+      <DependentUpon>GUI_DanhMucChinh.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackEnd\GUI_DanhMucChinh.aspx.designer.cs">
+      <DependentUpon>GUI_DanhMucChinh.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BackEnd\GUI_DanhMucPhu.aspx.cs">
+      <DependentUpon>GUI_DanhMucPhu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackEnd\GUI_DanhMucPhu.aspx.designer.cs">
+      <DependentUpon>GUI_DanhMucPhu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BackEnd\GUI_LichTrinh.aspx.cs">
+      <DependentUpon>GUI_LichTrinh.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackEnd\GUI_LichTrinh.aspx.designer.cs">
+      <DependentUpon>GUI_LichTrinh.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BackEnd\GUI_ManHinhChucNang.aspx.cs">
+      <DependentUpon>GUI_ManHinhChucNang.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackEnd\GUI_ManHinhChucNang.aspx.designer.cs">
+      <DependentUpon>GUI_ManHinhChucNang.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BackEnd\GUI_SuKien.aspx.cs">
+      <DependentUpon>GUI_SuKien.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackEnd\GUI_SuKien.aspx.designer.cs">
+      <DependentUpon>GUI_SuKien.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BackEnd\GUI_TaiKhoan.aspx.cs">
+      <DependentUpon>GUI_TaiKhoan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackEnd\GUI_TaiKhoan.aspx.designer.cs">
+      <DependentUpon>GUI_TaiKhoan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BackEnd\GUI_Tour.aspx.cs">
+      <DependentUpon>GUI_Tour.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackEnd\GUI_Tour.aspx.designer.cs">
+      <DependentUpon>GUI_Tour.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BackEnd\GUI_XeThue.aspx.cs">
+      <DependentUpon>GUI_XeThue.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackEnd\GUI_XeThue.aspx.designer.cs">
+      <DependentUpon>GUI_XeThue.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FontEnd\GUI_ChiTietDanhMucPhu_LichTrinh.aspx.cs">
+      <DependentUpon>GUI_ChiTietDanhMucPhu_LichTrinh.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FontEnd\GUI_ChiTietDanhMucPhu_LichTrinh.aspx.designer.cs">
+      <DependentUpon>GUI_ChiTietDanhMucPhu_LichTrinh.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FontEnd\GUI_ChiTietDanhMucPhu_SuKien.aspx.cs">
+      <DependentUpon>GUI_ChiTietDanhMucPhu_SuKien.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FontEnd\GUI_ChiTietDanhMucPhu_SuKien.aspx.designer.cs">
+      <DependentUpon>GUI_ChiTietDanhMucPhu_SuKien.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FontEnd\GUI_ChiTietDanhMucPhu_ThueXe.aspx.cs">
+      <DependentUpon>GUI_ChiTietDanhMucPhu_ThueXe.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FontEnd\GUI_ChiTietDanhMucPhu_ThueXe.aspx.designer.cs">
+      <DependentUpon>GUI_ChiTietDanhMucPhu_ThueXe.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FontEnd\GUI_ChiTietDanhMucPhu_Tour.aspx.cs">
+      <DependentUpon>GUI_ChiTietDanhMucPhu_Tour.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FontEnd\GUI_ChiTietDanhMucPhu_Tour.aspx.designer.cs">
+      <DependentUpon>GUI_ChiTietDanhMucPhu_Tour.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FontEnd\GUI_ChiTietDanhMuc_LichTrinh.aspx.cs">
+      <DependentUpon>GUI_ChiTietDanhMuc_LichTrinh.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FontEnd\GUI_ChiTietDanhMuc_LichTrinh.aspx.designer.cs">
+      <DependentUpon>GUI_ChiTietDanhMuc_LichTrinh.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FontEnd\GUI_ChiTietDanhMuc_SuKien.aspx.cs">
+      <DependentUpon>GUI_ChiTietDanhMuc_SuKien.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FontEnd\GUI_ChiTietDanhMuc_SuKien.aspx.designer.cs">
+      <DependentUpon>GUI_ChiTietDanhMuc_SuKien.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FontEnd\GUI_ChiTietDanhMuc_ThueXe.aspx.cs">
+      <DependentUpon>GUI_ChiTietDanhMuc_ThueXe.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FontEnd\GUI_ChiTietDanhMuc_ThueXe.aspx.designer.cs">
+      <DependentUpon>GUI_ChiTietDanhMuc_ThueXe.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FontEnd\GUI_ChiTietDanhMuc_Tour.aspx.cs">
+      <DependentUpon>GUI_ChiTietDanhMuc_Tour.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FontEnd\GUI_ChiTietDanhMuc_Tour.aspx.designer.cs">
+      <DependentUpon>GUI_ChiTietDanhMuc_Tour.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FontEnd\GUI_ChiTietSuKien.aspx.cs">
+      <DependentUpon>GUI_ChiTietSuKien.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FontEnd\GUI_ChiTietSuKien.aspx.designer.cs">
+      <DependentUpon>GUI_ChiTietSuKien.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FontEnd\GUI_ChiTietTour.aspx.cs">
+      <DependentUpon>GUI_ChiTietTour.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FontEnd\GUI_ChiTietTour.aspx.designer.cs">
+      <DependentUpon>GUI_ChiTietTour.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FontEnd\GUI_ChiTietXeThue.aspx.cs">
+      <DependentUpon>GUI_ChiTietXeThue.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FontEnd\GUI_ChiTietXeThue.aspx.designer.cs">
+      <DependentUpon>GUI_ChiTietXeThue.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FontEnd\GUI_TimKiem.aspx.cs">
+      <DependentUpon>GUI_TimKiem.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FontEnd\GUI_TimKiem.aspx.designer.cs">
+      <DependentUpon>GUI_TimKiem.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FontEnd\GUI_TrangChu.aspx.cs">
+      <DependentUpon>GUI_TrangChu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FontEnd\GUI_TrangChu.aspx.designer.cs">
+      <DependentUpon>GUI_TrangChu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FontEnd\GUI_XacNhanTour.aspx.cs">
+      <DependentUpon>GUI_XacNhanTour.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FontEnd\GUI_XacNhanTour.aspx.designer.cs">
+      <DependentUpon>GUI_XacNhanTour.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FontEnd\Master.Master.cs">
+      <DependentUpon>Master.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FontEnd\Master.Master.designer.cs">
+      <DependentUpon>Master.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="FontEnd\Master.Master" />
+    <Content Include="FontEnd\Master_files\0Su3fAAytzH.js.tải xuống" />
+    <Content Include="FontEnd\Master_files\1hRQeaWjK8I.js.tải xuống" />
+    <Content Include="FontEnd\Master_files\2__8gnlqZGT.js.tải xuống" />
+    <Content Include="FontEnd\Master_files\4x6fbI5XMEb.js.tải xuống" />
+    <Content Include="FontEnd\Master_files\5uVvlEXn08z.js.tải xuống" />
+    <Content Include="FontEnd\Master_files\6JdjE-AiPEL.js.tải xuống" />
+    <Content Include="FontEnd\Master_files\6KqFq7q8hV0.js.tải xuống" />
+    <Content Include="FontEnd\Master_files\9QeRDvoNtYo.js.tải xuống" />
+    <Content Include="FontEnd\Master_files\adiSnLO504q.js.tải xuống" />
+    <Content Include="FontEnd\Master_files\analytics.js.tải xuống" />
+    <Content Include="FontEnd\Master_files\bDOkMCjD7c_.js.tải xuống" />
+    <Content Include="FontEnd\Master_files\c0cMm7IdYnv.js.tải xuống" />
+    <Content Include="FontEnd\Master_files\CK0RgqiJ8Hf.js.tải xuống" />
+    <Content Include="FontEnd\Master_files\css" />
+    <Content Include="FontEnd\Master_files\DMCABadgeHelper.min.js.tải xuống" />
+    <Content Include="FontEnd\Master_files\drag-quick-call-button.js.tải xuống" />
+    <Content Include="FontEnd\Master_files\e-202035.js.tải xuống" />
+    <Content Include="FontEnd\Master_files\e4ZDd-GfOcf.js.tải xuống" />
+    <Content Include="FontEnd\Master_files\iB06jm1EJPH.js.tải xuống" />
+    <Content Include="FontEnd\Master_files\jquery-migrate.min.js.tải xuống" />
+    <Content Include="FontEnd\Master_files\jquery-ui.min.js.tải xuống" />
+    <Content Include="FontEnd\Master_files\jquery.js.tải xuống" />
+    <Content Include="FontEnd\Master_files\jquery.touchSwipe.min.js.tải xuống" />
+    <Content Include="FontEnd\Master_files\jquery.ui.touch-punch.min.js.tải xuống" />
+    <Content Include="FontEnd\Master_files\js" />
+    <Content Include="FontEnd\Master_files\kk-star-ratings.js.tải xuống" />
+    <Content Include="FontEnd\Master_files\MfIwtWGQEjj.js.tải xuống" />
+    <Content Include="FontEnd\Master_files\modernizr.custom.js.tải xuống" />
+    <Content Include="FontEnd\Master_files\NenzRtF65_Z.js.tải xuống" />
+    <Content Include="FontEnd\Master_files\public.min.js.tải xuống" />
+    <Content Include="FontEnd\Master_files\r6tIj92IMrP.js.tải xuống" />
+    <Content Include="FontEnd\Master_files\rohiiVX_061.js.tải xuống" />
+    <Content Include="FontEnd\Master_files\scripts.js%281%29.tải xuống" />
+    <Content Include="FontEnd\Master_files\scripts.js.tải xuống" />
+    <Content Include="FontEnd\Master_files\sdk.js%281%29.tải xuống" />
+    <Content Include="FontEnd\Master_files\sdk.js.tải xuống" />
+    <Content Include="FontEnd\Master_files\smush-lazy-load.min.js.tải xuống" />
+    <Content Include="FontEnd\Master_files\tT-mB-O-LnI.js.tải xuống" />
+    <Content Include="FontEnd\Master_files\uNrlrQ7AylQ.js.tải xuống" />
+    <Content Include="FontEnd\Master_files\wp-embed.min.js.tải xuống" />
+    <Content Include="FontEnd\Master_files\wp-emoji-release.min.js.tải xuống" />
+    <Content Include="FontEnd\Master_files\wprmenu.js.tải xuống" />
+    <Content Include="FontEnd\Master_files\Y8TV8aqlMgu.js.tải xuống" />
+    <Content Include="FontEnd\Master_files\z-Vlf-Atl4M.js.tải xuống" />
+    <Content Include="FontEnd\Master_files\_0BBB2rEeBL.js.tải xuống" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BUS\BUS.csproj">
+      <Project>{a2c055cb-f4d2-4adf-be03-31fe97d9e76b}</Project>
+      <Name>BUS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DTO\DTO.csproj">
+      <Project>{a4441028-51ea-4869-bbac-ea10487a6f23}</Project>
+      <Name>DTO</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>7894</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:7450/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
